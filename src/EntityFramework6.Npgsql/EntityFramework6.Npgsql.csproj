@@ -27,7 +27,9 @@
     <EmbeddedResource Include="Resources/*" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="install.ps1" Pack="true" PackagePath="\tools" />
+    <Content Include="content/**" PackagePath="contentFiles/any">
+      <IncludeInPackage>true</IncludeInPackage>
+    </Content>
   </ItemGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
     <Reference Include="System" />
