@@ -7,11 +7,11 @@
     <ProjectReference Include="..\..\src\EntityFramework6.Npgsql\EntityFramework6.Npgsql.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="EntityFramework" Version="6.3.0-preview5-19254-05" />
+    <PackageReference Include="EntityFramework" Version="$(EFVersion)" />
     <PackageReference Include="NUnit" Version="3.12.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.1.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
     <PackageReference Include="NLog" Version="4.6.3" />
-    <PackageReference Include="Npgsql.LegacyPostgis" Version="4.0.6" />
+    <PackageReference Include="Npgsql.LegacyPostgis" Version="$(NpgsqlVersion)" />
   </ItemGroup>
 </Project>
